@@ -17,9 +17,9 @@
         <!-- todo ajouter logo "seda karadeniz web design & web dev-->
         <nav>
             <ul>
-                <li>Competences</li>
-                <li>Experience</li>
-                <li>Avis</li>
+                <li><a href="#">Competences</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Avis</a></li>
             </ul>
         </nav>
         <a href="mailto:sedayo98@gmail.com?subject=contact%20via%20site%20du%20CV" class="btn-contact">Me contacter</a>
@@ -30,15 +30,81 @@
             <p class=""> Je suis actuellement étudiante en bachelier en techniques graphiques orientation web développement / web design </p>
             <p class="experience-year"><span>7+</span>Années d’expériences</p>
         </div>
-        <img src="../img/css.svg" alt="svg" >
-        <img src="../img/html.svg" alt="svg" >
-        <img src="../img/js.svg" alt="svg" >
-        <img src="../img/php.svg" alt="svg" >
-        <img src="../img/flutter.svg" alt="svg" >
-        <img src="../img/laravel.svg" alt="svg" >
-        <img src="../img/figma.svg" alt="svg" >
-        <img src="../img/adobe.svg" alt="svg" >
-    </main>
+        <div class="logo__competences">
+            <img src="../img/css.svg" alt="svg" >
+            <img src="../img/html.svg" alt="svg" >
+            <img src="../img/js.svg" alt="svg" >
+            <img src="../img/php.svg" alt="svg" >
+            <img src="../img/flutter.svg" alt="svg" >
+            <img src="../img/laravel.svg" alt="svg" >
+            <img src="../img/figma.svg" alt="svg" >
+            <img src="../img/adobe.svg" alt="svg" >
+        </div>
+        <section class="competences">
+            <h2>Mes competences</h2>
+            <!-- <label for="search-compet">rechercher</label>
+            <input type="search" id="search-compet" name="search-compet" placeholder="Rechercher une competence">
+            <button>Search</button>
+            -->
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Rechercher une competence">
 
+            <ul id="myUL">
+                <li class="competence__card">
+                    <div>
+                        <a href="#">CSS</a>
+                    </div>
+
+                </li>
+                <li class="competence__card">
+                    <div>
+                        <a href="#">HTML</a>
+                    </div>
+                </li>
+                <li class="competence__card">
+                    <div>
+                        <a href="#">JavaScript</a>
+                    </div>
+                </li>
+                <li class="competence__card">
+                    <div>
+                        <a href="#">PHP</a>
+                    </div>
+                </li>
+                <li class="competence__card">
+                    <div>
+                        <a href="#">Laravel</a>
+                    </div>
+                </li>
+                <li class="competence__card">
+                    <div>
+                        <a href="#">Flutter</a>
+                    </div>
+                </li>
+                <li class="competence__card">
+                    <div>
+                        <a href="#">Figma</a>
+                    </div>
+                </li>
+                <li class="competence__card">
+                    <div>
+                        <a href="#">Adobe XD</a>
+                    </div>
+                </li>
+                <li class="competence__card">
+                    <div>
+                        <a href="#">Adobe Illustrator</a>
+                    </div>
+                </li>
+                <li class="competence__card">
+                    <div>
+                        <a href="#">Adobe Photoshop</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </section>
+    </main>
+<script src="../js/main.js"></script>
 </body>
 </html>
