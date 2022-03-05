@@ -1,3 +1,52 @@
+@font-face {
+    font-family: "Artegra Sans";
+    src: url("./font/artegrasoft.woff") format("woff"),
+    url("./font/artegrasoft.woff") format("woff");
+
+}
+@font-face {
+
+    font-family: "Hind Guntur";
+    src: url("./font/hindguntur-bold.woff") format("woff"),
+    url("./font/hindguntur-bold.woff") format("woff");
+
+}
+
+
+/* noinspection CssNoGenericFontName*/
+html{
+    font-size: 18px;
+    font-family: "Artegra Sans";
+    font-weight: lighter;
+}
+header{
+    background: radial-gradient(circle at 0%, #ffd6cb, #ffc6d3 10%, #f4c8e5 20%, #e4daf0 22%, #DDE8F9 25%, white 30%);
+}
+/* noinspection CssNoGenericFontName*/
+h1{
+    font-size: 48px;
+    font-family: "Hind Guntur";
+}
+/* noinspection CssNoGenericFontName*/
+h2{
+    font-family: "Hind Guntur";
+    font-size: 40px;
+    color: #241D6F;
+}
+p.experience__year{
+    font-size: 16px;
+    color: #9D9D9D;
+}
+p.experience__year span{
+    font-size: 20px;
+    color: #FF45A1;
+}
+a.btn__contact{
+    color: #FF45A1;
+    background-color: #FFDDEE;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
 
 ul{
     list-style-type: none;
@@ -10,6 +59,102 @@ a.experience__link {
     width: 200px;
     height: auto;
 }
+
+.hidden{
+    position: absolute;
+    left: -999px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a.btn__contact:hover{
+    background-color: #ff45a1;
+    color: #FFDDEE;
+}
+
+
+input{
+    min-width: 250px;
+    color: #bababa;
+    border: solid 0.5px #bababa;
+    border-radius: 20px;
+    padding: 10px 35px;
+
+}
+.input__container{
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+.input__container i{
+    color: #bababa;
+    position: absolute;
+    padding-top: 18px;
+    padding-left: 15px;
+
+}
+#myUL{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+li.competence__card div{
+    background-color: #ff45a1;
+    min-width: 250px;
+    min-height: 250px;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+
+}
+li.competence__card div span{
+    font-size: 26px;
+
+
+}
+li.competence__card div p{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+li.competence__card div a{
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: rgba(246, 246, 246, 0.35);
+    padding: 10px 15px;
+
+}
+
+
+
+
+@media (max-width: 640px) {
+
+    header{
+        background: radial-gradient(circle at 0%, #ffd6cb, #ffc6d3 30%, #f4c8e5 40%, #e4daf0 42%, #DDE8F9 45%, white 50%);/*
+        background: linear-gradient(to bottom right ,#ffd6cb, #ffc6d3 20%, #f4c8e5 30%, #e4daf0 32%, #DDE8F9 35%, white 40%);*/
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 26px;
+    }
+    svg{
+        height: 50px;
+        width: auto;
+    }
+
+
+}
+
+
 /*
 
 #myInput {
