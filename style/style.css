@@ -68,8 +68,11 @@ nav a{
     text-decoration: none;
     color: black;
 }
+nav a.navigation:hover,nav a.navigation:focus {
+    color: #ff45a1;
+}
 
-nav a.btn__contact:hover{
+nav a.btn__contact:hover, nav a.btn__contact:focus{
     background-color: #ff45a1;
     color: #FFDDEE;
 }
@@ -99,23 +102,25 @@ input{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    column-gap: 10px;
 
 }
+
 li.competence__card div{
+    box-sizing: border-box;
     background-color: #ff45a1;
-    min-width: 250px;
-    min-height: 250px;
+    min-width: 180px;
     color: white;
     text-align: center;
     padding-top: 60px;
     margin-bottom: 20px;
     border-radius: 20px;
-
+    padding-bottom: 30px;
 
 }
+
 li.competence__card div span{
     font-size: 26px;
-
 
 }
 li.competence__card div p{
@@ -131,7 +136,12 @@ li.competence__card div a{
 
 }
 
+/* -- contact-- */
 
+.subtitle__contact{
+    font-size: 18px;
+    color: #ff45a1;
+}
 
 
 @media (max-width: 640px) {
