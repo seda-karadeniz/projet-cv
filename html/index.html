@@ -16,28 +16,54 @@
 <body>
 
     <header itemscope itemtype="https://schema.org/Person">
-        <!-- todo ajouter logo "seda karadeniz web design & web dev-->
-        <h1 class="hidden">Seda Karadeniz</h1>
+        <div class="en-tete">
+        <h1 class="hidden" itemprop="name">Seda Karadeniz</h1>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88.028" height="32.957" viewBox="0 0 88.028 32.957">
+                <defs>
+                    <radialGradient id="radial-gradient" cx="0.366" cy="0.5" r="0.786" gradientUnits="objectBoundingBox">
+                        <stop offset="0" stop-color="#ffafbd"/>
+                        <stop offset="1" stop-color="#fff"/>
+                    </radialGradient>
+                </defs>
+                <g id="logoSK" transform="translate(-13 75.42)">
+                    <path id="Tracé_12" data-name="Tracé 12" d="M481.51,465.4" transform="translate(-380.482 -540.82)" fill="none"/>
+                    <path id="Tracé_13" data-name="Tracé 13" d="M296.16,542.241h4.561l.021,12.63h.157c.943-1.014,1.886-1.949,2.775-2.8l10.789-9.848h5.664l-12.78,11.133L321.16,568.4h-5.4L304.1,555.552l-3.35,2.89.015,9.987H296.2Z" transform="translate(-283.16 -610.892)" fill="url(#radial-gradient)"/>
+                    <path id="Tracé_14" data-name="Tracé 14" d="M317.11,562.245a11.121,11.121,0,0,0,5.724,1.207c3.2-.219,4.964-2.04,4.8-4.492-.154-2.274-1.537-3.483-4.9-4.521-4.058-1.14-6.647-3.029-6.879-6.453-.256-3.789,2.687-6.812,7.406-7.133a11.082,11.082,0,0,1,5.447.828l-.693,2.623a9.643,9.643,0,0,0-4.687-.839c-3.313.224-4.44,2.294-4.326,3.952.151,2.271,1.706,3.288,5.141,4.358,4.216,1.309,6.437,3.151,6.679,6.719.256,3.751-2.3,7.185-8.026,7.578a12.569,12.569,0,0,1-6.3-1.128Z" transform="translate(-295.639 -609.807)" fill="url(#radial-gradient)"/>
+                </g>
+            </svg>
+        </div>
+
+
         <nav>
             <h2 class="hidden">Navigation</h2>
             <ul>
                 <li><a href="#" class="navigation">Competences</a></li>
                 <li><a href="#" class="navigation">Experience</a></li>
                 <li><a href="#" class="navigation">Avis</a></li>
-                <li><a href="mailto:sedayo98@gmail.com?subject=contact%20via%20site%20du%20CV" class="btn__contact" itemprop="email">Me contacter</a>
-                </li>
 
             </ul>
+
         </nav>
+            <div>
+
+            <a href="mailto:sedayo98@gmail.com?subject=contact%20via%20site%20du%20CV" class="btn__contact" itemprop="email">Me contacter</a>
+        </div>
+
+        </div>
 
         <div class="debut">
-            <h1 class="accroche">Prenez du temps pour me connaitre</h1>
-            <p> Je suis <span itemprop="name">Seda Karadeniz</span>  actuellement étudiante <span>en bachelier en techniques graphiques orientation web développement / web design</span> </p>
-            <p class="experience__year"><span>7+</span>Années d’expériences</p>
+            <div class="phrase">
+                <h2 class="accroche">Prenez du temps pour me connaitre</h2>
+                <p> Je suis <span itemprop="name">Seda Karadeniz</span>  actuellement étudiante <span>en bachelier en techniques graphiques orientation web développement / web design</span> </p>
+                <p class="experience__year"><span>7+</span>Années d’expériences</p>
 
-            <img src="../img/smile.png" alt="Photo de Seda avec un grand sourire" itemprop="image">
+            </div>
 
+            <div class="div-img">
+                <img src="../img/smile.png" class="img-smile" alt="Photo de Seda avec un grand sourire" itemprop="image">
 
+            </div>
 
         </div>
 
@@ -133,7 +159,7 @@
 
         <!-- competence-->
 
-        <section class="competences">
+        <section class="competences ">
             <h2>Mes competences</h2>
             <div class="input__container">
                 <label for="myInput" class="hidden">Recherche</label>
@@ -142,118 +168,127 @@
 
             </div>
 
+                    <ul id="myUL" class="content">
+                        <li id="1" class="competence__card ">
+                            <div>
+                                <span>CSS</span>
+                                <p>4/5</p>
+                                <a href="#" class="info">Plus d'info</a>
+                            </div>
+                        </li>
+                        <li id="2" class="competence__card">
+                            <div>
+                                <span>HTML</span>
+                                <p>4/5</p>
+                                <a href="#" class="info">Plus d'info</a>
+                            </div>
+                        </li>
+                        <li id="3" class="competence__card">
+                            <div>
+                                <span>JavaScript</span>
+                                <p>4/5</p>
+                                <a href="#" class="info">Plus d'info</a>
+                            </div>
+                        </li>
+                        <li id="4" class="competence__card">
+                            <div>
+                                <span>PHP</span>
+                                <p>3/5</p>
+                                <a href="#" class="info">Plus d'info</a>
+                            </div>
+                        </li>
+                        <li class="competence__card">
+                            <div>
+                                <span>Laravel</span>
+                                <p>2/5</p>
+                                <a href="#" class="info">Plus d'info</a>
+                            </div>
 
-            <ul id="myUL">
-                <li class="competence__card">
-                    <div>
-                        <span>CSS</span>
-                        <p>4/5</p>
-                        <a href="#" class="info">Plus d'info</a>
-                    </div>
-                </li>
-                <li class="competence__card">
-                    <div>
-                        <span>HTML</span>
-                        <p>4/5</p>
-                        <a href="#" class="info">Plus d'info</a>
-                    </div>
-                </li>
-                <li class="competence__card">
-                    <div>
-                        <span>JavaScript</span>
-                        <p>4/5</p>
-                        <a href="#" class="info">Plus d'info</a>
-                    </div>
-                </li>
-                <li class="competence__card">
-                    <div>
-                        <span>PHP</span>
-                        <p>3/5</p>
-                        <a href="#" class="info">Plus d'info</a>
-                    </div>
-                </li>
-                <li class="competence__card">
-                    <div>
-                        <span>Laravel</span>
-                        <p>2/5</p>
-                        <a href="#" class="info">Plus d'info</a>
-                    </div>
+                        </li>
+                        <li class="competence__card">
+                            <div>
+                                <span>Flutter</span>
+                                <p>4/5</p>
+                                <a href="#" class="info">Plus d'info</a>
+                            </div>
+                        </li>
 
-                </li>
-                <li class="competence__card">
-                    <div>
-                        <span>Flutter</span>
-                        <p>4/5</p>
-                        <a href="#" class="info">Plus d'info</a>
-                    </div>
-                </li>
-                <li class="competence__card">
-                    <div>
-                        <span>Figma</span>
-                        <p>4/5</p>
-                        <a href="#" class="info">Plus d'info</a>
-                    </div>
-                </li>
-                <li class="competence__card">
-                    <div>
-                        <span>Adobe XD</span>
-                        <p>4/5</p>
-                        <a href="#" class="info">Plus d'info</a>
-                    </div>
-                </li>
-                <li class="competence__card">
-                    <div>
-                        <span>Adobe<br>Illustrator</span>
-                        <p>4/5</p>
-                        <a href="#" class="info">Plus d'info</a>
-                    </div>
-                </li>
-                <li class="competence__card">
-                    <div>
-                        <span>Adobe<br>Photoshop</span>
-                        <p>4/5</p>
-                        <a href="#" class="info">Plus d'info</a>
-                    </div>
-                </li>
-            </ul>
+                    </ul>
         </section>
 
         <!--contact-->
 
         <section class="contact">
             <!--todo cercles-->
-            <img src="../img/focus.png" alt="Photo de Seda regardant son ordinateur" itemprop="image">
-            <p class="subtitle__contact">contact</p>
-            <h2>Contactez-moi</h2>
-            <p>
-                Je suis actuellement étudiante en bachelier en techniques graphiques orientation web développement / web design
-            </p>
-            <a href="mailto:sedayo98@gmail.com?subject=contact%20via%20site%20du%20CV" class="btn__contact btn__contact__section" itemprop="email">Me contacter</a>
+            <div class="debut2">
+                <div class="div-img2">
+                    <img src="../img/focus.png" class="img-smile2" alt="Photo de Seda regardant son ordinateur" itemprop="image">
+                </div>
+                <div class="phrase2">
+                    <p class="subtitle__contact">contact</p>
 
+                    <h2>Contactez-moi</h2>
+                    <p>
+                        Je suis actuellement étudiante en bachelier en techniques graphiques orientation web développement / web design
+                    </p>
+                    <a href="mailto:sedayo98@gmail.com?subject=contact%20via%20site%20du%20CV" class="btn__contact btn__contact__section" itemprop="email">Me contacter</a>
+                </div>
+
+            </div>
         </section>
 
         <!--experience-->
 
         <section class="experience" itemscope itemtype="https://schema.org/Thing">
             <h2>Mes expériences</h2>
-            <p>Voici mes derniers Projets, vous pouvez jeter un coup d'œil à mon portfolio pour en voir plus</p>
-            <a href="#" class="portfolio">Mon portfolio</a>
-            <div>
-                <a href="#" class="experience__link" itemprop="url">
-                    <div>
-                        <img src="../img/background.png" alt="Illustration pour mon application de recettes" itemprop="image">
+            <div class="flex">
+                <p>Voici mes derniers Projets, vous pouvez jeter un coup d'œil à mon portfolio pour en voir plus</p>
+                <div>
 
-                        <h3 itemprop="name">Application de recettes de cuisine</h3>
-                        <p itemprop="description">Projet créer pour le cours de développement d'application mobile</p>
-                        <p class="tags">Tags&nbsp;:&nbsp;<small>Flutter</small><small>Dart</small><small>Firebase</small></p>
+                <a href="sedakaradeniz.be" class="portfolio">Mon portfolio</a>
+                </div>
+            </div>
+            <div class="experience__all">
+                <a href="https://github.com/seda-karadeniz/projet-client-pankart" class="experience__link" itemprop="url">
+                    <div class="experience__card">
+                        <div class="image__exp">
+                            <img src="../img/background.png" alt="Illustration pour mon application de recettes" itemprop="image">
+                        </div>
+
+                        <div class="experience__txt">
+                            <h3 itemprop="name">Application de recettes de cuisine</h3>
+                            <p itemprop="description">Projet créer pour le cours de développement d'application mobile</p>
+                            <p class="tags">Tags&nbsp;:&nbsp;<small>Flutter</small><small>Dart</small><small>Firebase</small></p>
+                        </div>
+
                     </div>
                 </a>
-                <a href="#" class="experience__link" itemprop="url">
-                    <div>
-                        <img src="../img/musique.png" alt="Illustration notes de musique pour le projet Pankart" itemprop="image">
-                        <h3 itemprop="name" >Pankart</h3>
-                        <p itemprop="description">Projet créer pour le cours de design web</p>
-                        <p class="tags">Tags&nbsp;:&nbsp;<small>HTML</small><small>CSS</small><small>JS</small><small>Wordpress</small></p>
+                <a href="https://github.com/seda-karadeniz/projet-client-pankart" class="experience__link" itemprop="url">
+                    <div class="experience__card">
+                        <div class="image__exp">
+                            <img src="../img/song.png" alt="instruments de musique" itemprop="image">
+
+                        </div>
+                        <div class="experience__txt">
+                            <h3 itemprop="name" >Pankart</h3>
+                            <p itemprop="description">Projet créer pour le cours de design web</p>
+                            <p class="tags">Tags&nbsp;:&nbsp;<small>HTML</small><small>CSS</small><small>JS</small><small>Wordpress</small></p>
+
+                        </div>
+                    </div>
+                </a>
+                <a href="noair.sedakaradeniz.be" class="experience__link" itemprop="url">
+                    <div class="experience__card">
+                        <div class="image__exp">
+                            <img src="../img/pollution.png" alt="Illustration d'une usine" itemprop="image">
+
+                        </div>
+                        <div class="experience__txt">
+                            <h3 itemprop="name" >Noair</h3>
+                            <p itemprop="description">Projet créer pour le cours de design web</p>
+                            <p class="tags">Tags&nbsp;:&nbsp;<small>HTML</small><small>CSS</small><small>JS</small><small>Wordpress</small></p>
+
+                        </div>
                     </div>
                 </a>
             </div>

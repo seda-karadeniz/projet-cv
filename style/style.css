@@ -1,35 +1,139 @@
-@font-face {
-    font-family: "Artegra Sans";
-    src: url("./font/artegrasoft.woff") format("woff"),
-    url("./font/artegrasoft.woff") format("woff");
 
-}
-@font-face {
-
-    font-family: "Hind Guntur";
-    src: url("./font/hindguntur-bold.woff") format("woff"),
-    url("./font/hindguntur-bold.woff") format("woff");
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap');
 
 
-/* noinspection CssNoGenericFontName*/
+      /* noinspection CssNoGenericFontName*/
 html{
-    font-size: 18px;
-    font-family: "Artegra Sans";
-    font-weight: lighter;
+    font-size: 10px;
+    font-family: "Hind Guntur", sans-serif;
 }
+
+/* ** header** */
 header{
     background: radial-gradient(circle at 0%, #ffd6cb, #ffc6d3 10%, #f4c8e5 20%, #e4daf0 22%, #DDE8F9 25%, white 30%);
 }
+
 /* noinspection CssNoGenericFontName*/
-h1{
-    font-size: 48px;
-    font-family: "Hind Guntur";
+.phrase h2{
+    font-size: 4.8rem;
 }
+main{
+    padding: 0 8rem;
+}
+header{
+    padding: 4rem 8rem;
+}
+.en-tete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 2.4rem;
+    row-gap: 3.6rem;
+
+
+}
+.logo svg{
+    width: 15rem;
+    height: auto;
+    margin-top: -20px;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a.navigation:hover,nav a.navigation:focus {
+    color: #ff45a1;
+}
+
+
+a.btn__contact{
+    color: #FF45A1;
+    background-color: #FFDDEE;
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+a.btn__contact:hover, a.btn__contact:focus{
+    background-color: #ff45a1;
+    color: #FFDDEE;
+    border-color: #FFDDEE;
+}
+nav ul{
+    font-size: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 2.4rem;
+    row-gap:2.4rem;
+
+}
+
+
+.debut{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 3.6rem;
+}
+
+.phrase{
+    max-width: 50rem;
+    margin-top: 18rem;
+}
+.div-img{
+    width: 50rem;
+    min-width: 35rem;
+    height: auto;
+}
+.img-smile{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.phrase h2{
+    margin-bottom: 3.6rem;
+    color: black;
+    max-width: 30rem;
+    line-height: 5.4rem;
+}
+.phrase p{
+    line-height: 2.7rem;
+}
+
+/*** logo competence***/
+
+.logo__competences{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 3.6rem;
+    row-gap: 3.6rem;
+    margin-bottom: 12rem;
+    margin-top: 5.4rem;
+}
+
+
+
+
+.experience__year{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.4rem;
+    border-left: gray solid 1px;
+    padding-left: 2.4rem;
+}
+
+
 /* noinspection CssNoGenericFontName*/
 h2{
-    font-family: "Hind Guntur";
+    font-weight: 900;
     font-size: 40px;
     color: #241D6F;
 }
@@ -38,7 +142,7 @@ p.experience__year{
     color: #9D9D9D;
 }
 p.experience__year span{
-    font-size: 20px;
+    font-size: 2rem;
     color: #FF45A1;
 }
 
@@ -50,7 +154,7 @@ a.experience__link {
     text-decoration: none;
 }
 .experience__link img {
-    width: 200px;
+    width: 20rem;
     height: auto;
 }
 
@@ -58,38 +162,22 @@ a.experience__link {
     position: absolute;
     left: -999px;
 }
-nav a{
-    text-decoration: none;
-    color: black;
+p{
+    font-size: 1.8rem;
 }
-nav a.navigation:hover,nav a.navigation:focus {
-    color: #ff45a1;
-}
-
-a.btn__contact{
-    color: #FF45A1;
-    background-color: #FFDDEE;
-    border-radius: 20px;
-    padding: 10px 15px;
-}
-nav a.btn__contact:hover, nav a.btn__contact:focus{
-    background-color: #ff45a1;
-    color: #FFDDEE;
-    border: solid 2px #FFDDEE ;
-}
-
 /*--barre de recherche --*/
 input{
-    min-width: 250px;
+    min-width: 25rem;
     color: #bababa;
     border: solid 0.5px #bababa;
     border-radius: 20px;
-    padding: 10px 35px;
+    padding: 1rem 3.5rem;
+
 
 }
 .input__container{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 3.6rem;
 
 }
 .input__container i{
@@ -99,49 +187,61 @@ input{
     padding-left: 15px;
 
 }
-/*-- competence card --*/
+/*-- ** competence card --*/
+.competences h2{
+    margin-bottom: 5.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #myUL{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    column-gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //justify-content: center;
+    column-gap: 1rem;
 
 }
+
 
 li.competence__card div{
     box-sizing: border-box;
     background-color: #ff45a1;
-    min-width: 180px;
+    min-width: 18rem;
     color: white;
     text-align: center;
-    padding-top: 60px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    padding-bottom: 30px;
+    padding-top: 6rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    padding-bottom: 3rem;
 
 }
 
 li.competence__card div span{
-    font-size: 26px;
+    font-size: 2.6rem;
 
 }
 li.competence__card div p{
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
 }
 li.competence__card div a{
     color: white;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 2rem;
     background-color: rgba(246, 246, 246, 0.35);
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
 
 }
+
+
+
+
 
 /* -- contact-- */
 
 .subtitle__contact{
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #ff45a1;
 }
 a.btn__contact__section{
@@ -156,73 +256,131 @@ a.btn__contact__section:hover, a.btn__contact__section:focus{
     border: solid 2px #5652CF;
 }
 
+.debut2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 3.6rem;
+}
+
+.phrase2{
+    max-width: 50rem;
+    margin-top: 12rem;
+}
+.div-img2{
+    width: 50rem;
+    min-width: 35rem;
+    height: auto;
+}
+.img-smile2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.phrase2 h2{
+    margin-bottom: 3.6rem;
+    max-width: 30rem;
+    line-height: 5.4rem;
+    color: black;
+}
+.phrase2 p{
+    line-height: 2.7rem;
+    margin-bottom: 3.6rem;
+}
+
+
+
 /*-- experience --*/
 
 section.experience{
     background-color: #242a3c;
+    margin: 12rem -8rem;
+    padding: 8rem;
 
 }
 .experience h2{
     color: #ff45a1;
+    font-size: 1.6rem;
+    margin-bottom: 3.6rem;
 }
 .experience p{
     color: white;
+    max-width: 70rem;
+    margin-bottom: 3.6rem;
+    line-height: 2.7rem;
 
+
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .experience a.portfolio{
     background-color: #ff45a1;
     color: #FFDDEE;
     text-decoration: none;
-    border-radius: 20px;
-    padding: 10px 15px;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
 }
 .experience a.portfolio:hover,.experience a.portfolio:focus{
     color: #ff45a1 ;
     background-color: #FFDDEE;
     border: solid 2px #ff45a1 ;
 }
-.experience__link div{
-    overflow: hidden;
-    background-color: white;
-    border-radius: 20px;
-    width: 200px;
-    min-height: 380px;
-
-
-}
-.experience > div{
+.experience__all{
+    margin-top: 3.6rem;
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 3.6rem;
+    column-gap: 3.6rem;
 }
 
-.experience__link div img{
-   height: 200px;
-    width: auto;
+.experience__link div{
+    background-color: white;
+    border-radius: 2rem;
+    max-width:30rem;
+    overflow: hidden;
+    min-height: 100%;
 }
-.experience__link h3{
+/*.experience__all{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}*/
+
+.experience img{
+
+    object-fit: cover;
+    width: 100%;
+    height: 20rem;
+
+}
+small{
+    font-size: 1.4rem;
+}
+.experience__txt{
+    word-break:break-word;
+    hyphens: auto;
+}
+.experience__txt h3{
     color: #242a3c;
-    padding-top: 16px;
-    padding-left: 10px;
+    font-size: 1.8rem;
+    padding: 20px 15px 25px 10px;
+    font-weight: 600;
+
 }
-.experience__link p{
+.experience__txt p{
     color: black;
-    padding-top: 8px;
-    padding-left: 10px;
-
-}
-.experience__link p.tags{
-    color: #ffc566;
-    padding-left: 10px;
-    padding-bottom: 16px;
-
-
+    padding: 0 15px 15px 10px;
+    line-height: 2.7rem;
 }
 
-
-/*1.utiliser object position pour position limage (la partie qui sera visible quand elle ssera tronquer
-2. utiliser max-width 100%
-pas oublier le height auto*/
 
 @media (max-width: 640px) {
 
@@ -230,48 +388,32 @@ pas oublier le height auto*/
         background: radial-gradient(circle at 0%, #ffd6cb, #ffc6d3 30%, #f4c8e5 40%, #e4daf0 42%, #DDE8F9 45%, white 50%);/*
         background: linear-gradient(to bottom right ,#ffd6cb, #ffc6d3 20%, #f4c8e5 30%, #e4daf0 32%, #DDE8F9 35%, white 40%);*/
     }
-    h1{
-        font-size: 32px;
-    }
-    h2{
-        font-size: 26px;
-    }
-    svg{
-        height: 50px;
+
+    .logo__competences svg{
+        height: 5rem;
         width: auto;
     }
 
 
 }
 
+@media (max-width: 670px) {
 
-/*
+    .en-tete{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3.6rem;
 
-#myInput {
-    font-size: 16px; !* Increase font-size *!
-    padding: 12px 20px 12px 40px; !* Add some padding *!
-    border: 1px solid #ddd; !* Add a grey border *!
-    margin-bottom: 12px; !* Add some space below the input *!
+    }
+
+
+
+}
+@media (max-width: 530px) {
+    .competence__card{
+        width: 100%;
+    }
+
+
 }
 
-#myUL {
-    !* Remove default list styling *!
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#myUL li a {
-    border: 1px solid #ddd; !* Add a border to all links *!
-    margin-top: -1px; !* Prevent double borders *!
-    background-color: #f6f6f6; !* Grey background color *!
-    padding: 12px; !* Add some padding *!
-    text-decoration: none; !* Remove default text underline *!
-    font-size: 18px; !* Increase the font-size *!
-    color: black; !* Add a black text color *!
-    display: block; !* Make it into a block element to fill the whole list *!
-}
-
-#myUL li a:hover:not(.header) {
-    background-color: #eee; !* Add a hover effect to all links, except for headers *!
-}*/
